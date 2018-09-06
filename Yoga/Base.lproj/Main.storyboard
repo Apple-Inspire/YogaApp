@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Yoga" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="newbackground" translatesAutoresizingMaskIntoConstraints="NO" id="2os-nu-38H">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yoga App" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZCk-qd-SBe">
+                                <rect key="frame" x="67" y="73" width="240" height="35"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CWJ-nc-eXl">
+                                <rect key="frame" x="105" y="705" width="165" height="45"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="nextbtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="t1P-0L-FWY"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="001" translatesAutoresizingMaskIntoConstraints="NO" id="lib-DR-LBd">
+                                <rect key="frame" x="30" y="138" width="315" height="229"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="229" id="6Wy-Dx-LTF"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ffY-SN-Kah">
+                                <rect key="frame" x="94" y="631" width="187" height="45"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <state key="normal" title="Pre"/>
+                                <connections>
+                                    <action selector="prev:" destination="BYZ-38-t0r" eventType="touchUpInside" id="T4a-pd-Pqt"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="CWJ-nc-eXl" secondAttribute="bottom" constant="28" id="6ck-z5-TE5"/>
+                            <constraint firstItem="2os-nu-38H" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="IWt-Xw-fmS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CWJ-nc-eXl" secondAttribute="trailing" constant="105" id="IgX-LW-tTJ"/>
+                            <constraint firstItem="ZCk-qd-SBe" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="29" id="QjG-Zg-S4k"/>
+                            <constraint firstItem="ZCk-qd-SBe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="67" id="SCZ-Hm-OBT"/>
+                            <constraint firstItem="2os-nu-38H" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Vfh-YV-ZPt"/>
+                            <constraint firstItem="2os-nu-38H" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Y7Z-kK-wQz"/>
+                            <constraint firstItem="lib-DR-LBd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="bTk-sC-hTO"/>
+                            <constraint firstItem="CWJ-nc-eXl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="105" id="bu0-Aw-6rh"/>
+                            <constraint firstItem="ffY-SN-Kah" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="94" id="c7R-hA-wgN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lib-DR-LBd" secondAttribute="trailing" constant="30" id="c91-gt-Py6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ffY-SN-Kah" secondAttribute="trailing" constant="94" id="f0v-jc-XaM"/>
+                            <constraint firstItem="2os-nu-38H" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="34" id="gtn-dw-CYl"/>
+                            <constraint firstItem="CWJ-nc-eXl" firstAttribute="top" secondItem="ffY-SN-Kah" secondAttribute="bottom" constant="29" id="jDN-dg-KCB"/>
+                            <constraint firstItem="lib-DR-LBd" firstAttribute="top" secondItem="ZCk-qd-SBe" secondAttribute="bottom" constant="30" id="rCx-Vo-CH3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ZCk-qd-SBe" secondAttribute="trailing" constant="68" id="wAN-fJ-1xP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="Image01" destination="lib-DR-LBd" id="XFo-ds-l34"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-0.80000000000000004" y="42.118226600985224"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="001" width="728" height="546"/>
+        <image name="newbackground" width="667" height="622"/>
+    </resources>
+</document>
